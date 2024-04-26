@@ -1,0 +1,24 @@
+/* color-green: #00f5d4; */
+/* color-blue: #03045e */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(60, 53, 178);
+    background: radial-gradient(circle, rgba(60, 53, 178, 1) 0%, rgba(8, 8, 87, 1) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap:50px;
+    color: #00f5d4;
+}
+
+
+
