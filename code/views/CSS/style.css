@@ -31,7 +31,9 @@ body{
 }
 
 .game {
-    background-color: #00f5d4;
+    background: #b3ffab;
+        background: -webkit-linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
+        background: linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
     width: 100%;
     border-radius: 12px;
     display: flex;
@@ -52,5 +54,17 @@ body{
     color: #00f5d4;
     cursor: pointer;
     font-size: 5rem;
+}
+
+.btn{
+    background: #b3ffab;
+        background: -webkit-linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
+        background: linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
+    padding: 15px;
+    color:#193fc8;
+    font-size:18px;
+    border-radius: 12px;
+        border: 0;
+    font-weight: 600;
 }
 
