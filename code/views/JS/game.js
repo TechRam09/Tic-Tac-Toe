@@ -52,3 +52,19 @@ function Winner(pos1) {
     winnerText.innerHTML = `Congrats To the Winner <br> '${pos1}'`;
   }, 800);
 }
+
+let checkWinner = () => {
+  for (const pattern of winningPattern) {
+    // console.log(pattern[0], pattern[1], pattern[2]);
+    // console.log(boxes[pattern[0]], boxes[pattern[1]], boxes[pattern[2]]);
+    pos1 = boxes[pattern[0]].innerHTML;
+    pos2 = boxes[pattern[1]].innerHTML;
+    pos3 = boxes[pattern[2]].innerHTML;
+
+    if (pos1 != "" && pos2 != "" && pos3 != "") {
+      if (pos1 === pos2 && pos2 === pos3) {
+        Winner(pos1);
+      }
+    }
+  }
+};
