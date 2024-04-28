@@ -15,3 +15,18 @@ let winningPattern = [
   [3, 4, 5],
   [6, 7, 8],
 ];
+let disabled = () => {
+  box.disabled = true;
+};
+
+resetBtn.addEventListener("click", () => {
+  turnX = true;
+  disabledBoxes();
+});
+
+let disabledBoxes = () => {
+  for (const box of boxes) {
+    box.disabled = false;
+    box.innerHTML = "";
+  }
+};
