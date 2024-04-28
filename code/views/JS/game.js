@@ -30,3 +30,12 @@ let disabledBoxes = () => {
     box.innerHTML = "";
   }
 };
+
+newGame.addEventListener("click", () => {
+  winnerText.style.display = "none";
+  newGame.style.display = "none";
+  disabledBoxes();
+
+  game.style.display = "flex";
+  resetBtn.style.display = "block";
+});
