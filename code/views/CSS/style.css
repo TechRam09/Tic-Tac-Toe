@@ -26,6 +26,7 @@ body{
     display: flex;
     /* height: 100%; */
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 
 }
@@ -74,5 +75,14 @@ body{
     background: #12fff7;
     background: -webkit-linear-gradient(214deg, #12fff7 0%, #b3ffab 100%);
     background: linear-gradient(214deg, #12fff7 0%, #b3ffab 100%);
+}
+
+.winnerText {
+    font-size: 3rem;
+}
+
+#newGame{
+    display: none;
+    margin-top: 35px;
 }
 
