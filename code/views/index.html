@@ -9,9 +9,11 @@
   <body>
     <h2>Tic-Tac-Toe</h2>
     <div class="container">
+      <h2 class="winnerText"></h2>
+      <button id="newGame" class="btn">New Game</button>
       <div class="game">
-        <button class="box">X</button>
-        <button class="box">O</button>
+        <button class="box"></button>
+        <button class="box"></button>
         <button class="box"></button>
         <button class="box"></button>
         <button class="box"></button>
@@ -21,7 +23,9 @@
         <button class="box"></button>
       </div>
     </div>
-    <button class="btn">Reset Game</button>
+    <button id="reset" class="btn">Reset Game</button>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
+
   <script src="./JS/game.js"></script>
 </html>
