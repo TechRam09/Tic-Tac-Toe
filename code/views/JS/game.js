@@ -68,3 +68,17 @@ let checkWinner = () => {
     }
   }
 };
+
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    if (turnX) {
+      box.innerHTML = "X";
+      turnX = false;
+    } else {
+      box.innerHTML = "O";
+      turnX = true;
+    }
+    box.disabled = true;
+    checkWinner();
+  });
+});
