@@ -39,3 +39,16 @@ newGame.addEventListener("click", () => {
   game.style.display = "flex";
   resetBtn.style.display = "block";
 });
+
+const jsConfetti = new JSConfetti({ container });
+function Winner(pos1) {
+  setTimeout(() => {
+    game.style.display = "none";
+    resetBtn.style.display = "none";
+    turnX = true;
+    newGame.style.display = "block";
+    jsConfetti.addConfetti();
+    winnerText.style.display = "block";
+    winnerText.innerHTML = `Congrats To the Winner <br> '${pos1}'`;
+  }, 800);
+}
